@@ -1,0 +1,130 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ececec;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header .avatar {
+    border-radius: 100%;
+    display: inline-block;
+    margin: 0 0 2em 0;
+    padding: 0.5em;
+    border: solid 1px rgba(255, 255, 255, 0.25);
+    background-color: rgba(255, 255, 255, 0.075);
+}
+
+header{
+    background-color: rgb(178, 103, 32);
+    display: flex;
+    align-items: center;
+}
+header a{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+header ul{
+    list-style-type: none;
+}
+
+#main-links ul{
+    display: flex;
+}
+
+#logo{
+    font-size: 1em;
+    margin: 0 auto;
+    font-family: 'Poiret One', cursive;
+}
+
+#social-links ul{
+    display: flex;
+}
+
+#intro{
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: black;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,1)),
+        url(img/cover.jpg);;  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,1)),
+        url(img/cover.jpg);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+}
+
+#intro p{
+    width: 60%;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+}
+
+#intro p a{
+    color: lightseagreen;
+}
+
+#intro h1{
+    font-size: 3em;
+    color: white;
+    padding: 22px;
+    font-family: 'Poiret One', cursive;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-color: black;
+    border-style: solid;
+}
+
+#footer{
+    background-color: black;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 720px){
+    header{
+        flex-direction: column;
+    }
+    #intro{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        min-height: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;  /* fallback for old browsers */
+        background-size: cover;
+    }
+    #logo{
+        order: -1;
+    }
+    #showcase aside{
+        display: none;
+    }
+    #intro h1{
+        font-size: 1.5em;
+    }
+    #intro p{
+        font-size: 1.5em;
+    }
+    #intro p{
+        width: 80%;
+    }
+}
